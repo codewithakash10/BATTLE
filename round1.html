@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Light Blue / Dark Mode Example</title>
+  <style>
+    body.light-mode {
+      background-color: #add8e6; /* Light Blue */
+      color: #333;
+      transition: background-color 0.5s, color 0.5s;
+    }
+
+    body.dark-mode {
+      background-color: #222; /* Dark mode */
+      color: #eee;
+      transition: background-color 0.5s, color 0.5s;
+    }
+
+    .mode-toggle {
+      padding: 10px 20px;
+      cursor: pointer;
+      background: #0077b6;
+      color: #fff;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+      margin: 20px auto;
+      display: block;
+    }
+
+    h1 {
+      text-align: center;
+      margin-top: 50px;
+    }
+  </style>
+</head>
+<body class="light-mode">
+
+  <h1>Light Blue / Dark Mode Switcher</h1>
+  <button class="mode-toggle" id="modeToggle">Switch to Dark Mode</button>
+
+  <script>
+    const modeToggle = document.getElementById('modeToggle');
+    
+    modeToggle.addEventListener('click', () => {
+      document.body.classList.toggle('dark-mode');
+      document.body.classList.toggle('light-mode');
+
+      // Button text update
+      if(document.body.classList.contains('dark-mode')){
+        modeToggle.textContent = 'Switch to Light Mode';
+      } else {
+        modeToggle.textContent = 'Switch to Dark Mode';
+      }
+    });
+  </script>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Light Blue / Dark Mode Example</title>
+  <style>
+    body.light-mode {
+      background-color: #add8e6; /* Light Blue */
+      color: #333;
+      transition: background-color 0.5s, color 0.5s;
+    }
+
+    body.dark-mode {
+      background-color: #222; /* Dark mode */
+      color: #eee;
+      transition: background-color 0.5s, color 0.5s;
+    }
+
+    .mode-toggle {
+      padding: 10px 20px;
+      cursor: pointer;
+      background: #0077b6;
+      color: #fff;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+      margin: 20px auto;
+      display: block;
+    }
+
+    h1 {
+      text-align: center;
+      margin-top: 50px;
+    }
+  </style>
+</head>
+<body class="light-mode">
+
+  <h1>Light Blue / Dark Mode Switcher</h1>
+  <button class="mode-toggle" id="modeToggle">Switch to Dark Mode</button>
+
+  <script>
+    const modeToggle = document.getElementById('modeToggle');
+    
+    modeToggle.addEventListener('click', () => {
+      document.body.classList.toggle('dark-mode');
+      document.body.classList.toggle('light-mode');
+
+      // Button text update
+      if(document.body.classList.contains('dark-mode')){
+        modeToggle.textContent = 'Switch to Light Mode';
+      } else {
+        modeToggle.textContent = 'Switch to Dark Mode';
+      }
+    });
+  </script>
+
+</body>
+</html>
